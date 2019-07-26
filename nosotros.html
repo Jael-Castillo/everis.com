@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sobre Nosotros</title>
+	<meta name="description" content="Pushbar.js is a tiny javascript plugin for creating sliding drawers in web apps">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Anton|Archivo+Black|Bowlby+One+SC|Faster+One|Fredoka+One|Hammersmith+One|Londrina+Solid|Patua+One|Rammetto+One|Righteous" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/pushbar.css">
+	<link rel="stylesheet" type="text/css" href="css/upiicsa.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<section class="hero is-success">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="titlee">
+	       Sobre nosotros
+	      </h1>
+	      <h2 class="subtitle">
+	        <div class="card_content">
+				<div>
+					<!--color del botón-->
+					<button data-pushbar-target="left" class="button is-success is-focused" style="font-size: 20px; color:white;">
+						<span class="icon" style ="margin: .1px;" >
+				  		<i class="fas fa-home"></i>
+						</span><p>Menú</p>
+					</button>
+				</div>
+			</div>
+	      </h2>
+	    </div>
+	  </div>
+	</section>
+
+	<div data-pushbar-id="left" class="pushbar from_left pushbar-menu">
+		<div class="btn-close left">
+			<button data-pushbar-close><i class="fas fa-times"></i></button>
+		</div>
+		<div class="title" style="color:white;">Everis blog</div>
+		<ul class="menu">
+			<a href="inicio.html">Inicio</a>
+			<a href="nosotros.html">Sobre Nosotros</a>
+			<a href="eventos.html">Eventos</a>
+		</ul>
+	</div>
+	<br>
+
+	<section class="section">
+		  <div class="card-content">
+		    <div class="media">
+		        <figure style="width: 20%">
+		         <img class="upiicsa" src="img/logo.png">
+		        </figure>
+		      <div class="media-content">
+		        <h2 class="name">¿Quiénes Somos?</h2>
+						<p ALIGN="justify" class="info">
+							Somos <b>everis</b> an NTT DATA Company, nos dedicamos a la 
+							consultoría y outsourcing abarcando todos los sectores <br> del ámbito económico, 
+							llegando a facturar en el último ejercicio fiscal cerca de 1.173 millones de euros. Somos una<br>
+							gran familia formada por 21.000 profesionales repartidos por Europa, USA y Latinoamérica.<br><br>
+							Por encima de todo creemos en las personas, en su desarrollo integral y en el talento que
+							representan. En <b>everis</b> <br> apostamos firmemente por el talento, y nuestro principal 
+							objetivo es conseguir un alto rendimiento profesional <br> al crear un contexto de libertad responsable. 
+							En definitiva, somos una empresa formada por gente buena.</p>
+		      </div>
+		    </div>
+		  </div>
+	</section>
+	<br>
+
+	<footer class="footer has-text-centered">
+		<p>© Copyright 2019 everis</p><br>
+				<a href="https://twitter.com" target="_blank">
+					<span class="color_iconos">
+						<i class="fab fa-2x fa-twitter"></i>
+					</span>
+				</a>
+				<a href="https://es-la.facebook.com" target="_blank">
+					<span class="color_iconos">
+							<i class="fab  fa-2x fa-facebook"></i>
+					</span>
+				</a>
+				<a href="https://mx.linkedin.com" target="_blank">
+					<span class="color_iconos">
+							<i class="fab fa-2x fa-linkedin"></i>
+					</span>
+				</a>
+	</footer> 
+
+<script type="text/javascript" src="js/pushbar.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script type="text/javascript">
+	var pushbar = new Pushbar({
+		blur:true,
+		overlay:true,
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*Bienvenido*/
+.titlee{
+
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
+	color:black	;
+
+}
+/*Nombre*/
+.name{
+	font-family: 'Righteous', cursive;
+	font-size: 40px;
+	margin: 20px;
+}
+
+/*Forma de la imagen y Movimiento*/
+.footer{
+	background:#D7DBDD;
+}
+
+.info{
+	padding: 20px; 
+	font-size: 22px;
+}
